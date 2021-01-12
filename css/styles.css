@@ -1,0 +1,294 @@
+* {
+box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* default style when browsing with small device */
+
+
+header {
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    overflow: hidden;
+}
+
+header p {
+    color: rgb(71, 71, 71);
+    font-size: 1.4em;
+    padding-top: 10px;
+ }
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+li.studentname {
+    display: none;
+}
+
+ul.navlist{
+    overflow: hidden;
+    font-size: 1.5em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.navlist li {
+    background-color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+ul.navlist li a {
+    margin-bottom: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+    
+}
+
+ul.navlist li a:hover {
+    color: rgb(60, 196, 150);
+}
+
+.profilepicture {  
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 60%;
+}
+
+.info {
+    margin: 0 auto;
+    width: 80%;
+}
+.portfolio h3 {
+   text-align: center;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   text-transform: uppercase;
+}
+
+.portfolio img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+ }
+
+.contentbox h4 {
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 80%;
+ }
+
+
+ul.contactlinks {
+    list-style-type: none;
+}
+ul.contactlinks li {
+    
+    font-weight: bold;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 1.1em;
+    text-transform: capitalize;
+}
+
+ul.contactlinks li a {
+    text-transform: none;
+    text-decoration: none;
+    color: rgb(150, 58, 187);
+}
+footer  {
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 20px;
+    text-align: center;
+} 
+
+footer h3 {
+    padding-top: 10px;
+}
+footer p {
+    width:70%;
+    text-align: center;
+    margin: 0 auto;
+}
+ul.footerinfo {
+    list-style-type: none;
+    overflow: hidden;
+    border-top: olivedrab solid 1px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+ul.footerinfo li {
+    float: left;
+}
+ul.footerinfo li a {
+    display: block;
+    color: rgb(34, 34, 34);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul.footerinfo li a:hover {
+    color: rgb(60, 196, 150);
+}
+
+ul.footerinfo li.backtotop {
+    float: right;
+    margin-right: 20px;
+}
+.footnav {
+    display: none;
+}
+/* screen size for tablet sized screens */
+@media screen and (min-width: 768px) {
+
+   
+    header {
+        padding-bottom: 30px;
+    }
+    header p {
+        padding: 0;
+    }
+
+    ul.navlist li.studentname {
+        display: none;
+    }
+
+    ul.navlist li{    
+        display: inline-block;  
+        background-color: rgb(245, 245, 245);
+    }
+    ul.navlist li:hover {
+        background-color: rgb(245, 245, 245);
+    }
+    .profilepicture  {
+        float:right;
+        width: 30%;
+        margin-right: 25px;
+        padding-bottom: 10px;
+    }
+    .info{
+        margin-top: 15px;
+        float: left;
+        width: 50%;
+        
+    }
+    
+    .contentbox {
+        overflow: hidden;
+        display: block;
+        float: left;
+        width: 50%;
+    }
+
+    footer {
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    footer h3 {
+        margin-top: 25px;
+        padding-bottom: 25px;
+        font-size: 1.4em;
+    }
+    footer p {
+        padding-bottom: 25px;
+    }
+
+    footer li {
+        padding-bottom: 15px;
+    }
+
+   ul.footerinfo li.footnav {
+        display: list-item;
+        padding-right: 15px;
+        float: right;
+     }
+
+    
+
+    .backtotop {
+        display: none;
+    }
+}
+
+
+/* screen size for larger screen */
+@media screen and (min-width: 1024px) {
+ 
+    .rightresponsive {
+        float: right;
+    }
+    .profilepicture {
+        margin: 0;
+    }
+    .info {
+        text-align: left;
+    }
+    .contactinfo {
+        max-width: 600px;
+    }
+
+    header .navwrap {
+        margin: 0 auto;
+        width: 90%;
+        text-align: right;
+    }
+    
+    .contentbox {
+        overflow: hidden;
+        display: block;
+        float: left;
+        width: 33.3%;
+    }
+    ul.navlist {
+        margin-top: 20px;
+        
+    }
+    ul.navlist li {
+        font-size: 0.7em;
+        background-color: rgb(245, 245, 245);
+    }
+
+    ul.navlist li a:hover {
+        color: rgb(60, 196, 150);
+    }
+    ul.navlist li.studentname {
+        font-size: 1.1em;
+        display: list-item;
+        float: left;
+        padding-top: 10px;
+        text-transform: capitalize;
+        margin: 0;
+    }
+    header h1 {
+        display: none;
+    }
+}
